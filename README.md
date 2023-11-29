@@ -1,3 +1,16 @@
+# INSTRUCTION
+
+To run the project please install the dependecy
+
+1. `npm run install`
+2. `npm run seed`
+3. `npm start`
+
+The project will run at follow URLs:
+1. client: `http://localhost:3000`
+2. server: `http://localhost:3001`
+
+
 # DEEL FULLSTACK TASK
 
 💫 Welcome! 🎉
