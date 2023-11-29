@@ -1,0 +1,38 @@
+{
+    "name": "deel-task",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "eslint": "^8.54.0",
+        "eslint-config-prettier": "^9.0.0",
+        "express": "4.17.1",
+        "http-errors": "^2.0.0",
+        "jest": "^29.7.0",
+        "jest-runner-eslint": "^2.1.2",
+        "joi": "^17.11.0",
+        "morgan": "^1.10.0",
+        "prettier": "^3.1.0",
+        "sequelize": "^6.3.4",
+        "sqlite3": "^5.1.6",
+        "supertest": "^6.3.3"
+    },
+    "scripts": {
+        "start": "nodemon ./src/server.js",
+        "seed": "node ./scripts/seedDb.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "test": "npm run seed && jest --detectOpenHandles --silent --runInBand --forceExit --verbose --testPathPattern=\\.test\\.js$"
+    },
+    "devDependencies": {
+        "concurrently": "4.1.0",
+        "nodemon": "1.19.1"
+    },
+    "engines": {
+        "node": ">=10.16.3"
+    },
+    "engineStrict": true
+}
